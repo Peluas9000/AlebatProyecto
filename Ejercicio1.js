@@ -10,12 +10,12 @@ Let:
 Const:*/
 
 //Camel CASE
-let userName = "";
+let userName = "Ayoub";
 // Pascal CASE
-let UserName = "";
+let UserName = "Ayoub";
 
 //Snake CASE
-let user_name = "";
+let user_name = "Ayoub";
 
 //Kebab CASE
 
@@ -27,7 +27,9 @@ user - name;
 
 //el var lo utilizaria como una variable sin restricciones de cambio , es decir , que incluso puedo
 // cambiarlo en el mismo bloque de codigo
-
+var num = 1;
 //el let es igual que el var , es decir , se puede modificar pero no puedes modificar la varibale en un mismo bloque de codigo
-
+let num = 1;
+let num = 2;
 // Y el const es para utilizarlo como una variable con valor pensado en que no cambie o fijo
+const num = 1;
