@@ -28,5 +28,5 @@ console.log(undefined == null); //Esto es una regla es exclusiva de JS , devuelv
 
 // Operaciones con NaN
 console.log(NaN + 1); //Como dije anteriormente cualquier operacion con NaN devuelve o es igual -> NaN
-console.log(NaN == NaN); //
-console.log(NaN === NaN);
+console.log(NaN == NaN); //NaN por regla general nuca es igual de si mismo, devuelve ->false
+console.log(NaN === NaN); //LO mismo , NaN nunca acaba siendo igual de si mismo en comprobaciones, devuelve -> false
