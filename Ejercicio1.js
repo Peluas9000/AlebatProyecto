@@ -32,4 +32,4 @@ var num = 1;
 let num = 1;
 let num = 2;
 // Y el const es para utilizarlo como una variable con valor pensado en que no cambie o fijo
-const num = 1;
+const num = 2;
