@@ -1,5 +1,5 @@
 interface Animal {
-  name: string;
+  nombre: string;
   canEat: boolean;
   canDrink: boolean;
   canSleep: boolean;
@@ -13,15 +13,17 @@ interface Dog extends Animal {
   age: number;
 }
 
+type ColorHexadecimal = [number, number, number];
+
 interface Cat extends Animal {
-  color: string;
+  color: string | ColorHexadecimal;
 }
 
 interface Snake extends Animal {}
 
 //Instancia de objetos
 const bird: Bird = {
-  name: "Paloma",
+  nombre: "Paloma",
   canEat: true,
   canDrink: true,
   canSleep: true,
@@ -29,7 +31,7 @@ const bird: Bird = {
 };
 
 const dog: Dog = {
-  name: "Rocky",
+  nombre: "Rocky",
   canEat: true,
   canDrink: true,
   canSleep: true,
@@ -38,8 +40,19 @@ const dog: Dog = {
 };
 
 const snake: Snake = {
-  name: "PIton",
+  nombre: "PIton",
   canSleep: true,
   canDrink: true,
   canEat: false,
 };
+
+const negrito: Cat = {
+  nombre: "negrito",
+  canDrink: true,
+  canEat: true,
+  canSleep: true,
+  color: [123, 123, 123],
+};
+
+//FUNCTIONS
+//EJEMPLO QUE EL COLOR NO SEA SOLO STRING SINO HEXADECIMAL
