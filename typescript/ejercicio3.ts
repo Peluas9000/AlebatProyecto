@@ -56,3 +56,14 @@ const negrito: Cat = {
 
 //FUNCTIONS
 //EJEMPLO QUE EL COLOR NO SEA SOLO STRING SINO HEXADECIMAL
+function getColorHexadecimal(color: string | ColorHexadecimal): string {
+  if (typeof color === "string") {
+    return color;
+  } else {
+    const [r, g, b] = color;
+    return `rgb(${r}, ${g}, ${b})`;
+  }
+}
+
+console.log(getColorHexadecimal("negro")); // Output: "negro"           
+console.log(getColorHexadecimal([255, 0, 0])); // Output: "rgb(255, 0, 0)"
