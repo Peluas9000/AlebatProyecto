@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_shared_topics",
+    "info": {
+        "displayName": "topic"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "subtopics": {
+            "type": "component",
+            "component": "shared.subtopic",
+            "repeatable": true
+        }
+    },
+    "config": {}
+}

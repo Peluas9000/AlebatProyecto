@@ -1,0 +1,16 @@
+{
+    "collectionName": "components_shared_profesor_details",
+    "info": {
+        "displayName": "profesor-detail"
+    },
+    "options": {},
+    "attributes": {
+        "especialidad": {
+            "type": "string"
+        },
+        "experiencia": {
+            "type": "integer"
+        }
+    },
+    "config": {}
+}

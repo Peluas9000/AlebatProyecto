@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_shared_event_details",
+    "info": {
+        "displayName": "event-details"
+    },
+    "options": {},
+    "attributes": {
+        "fecha": {
+            "type": "date"
+        },
+        "hora": {
+            "type": "time"
+        },
+        "lugar": {
+            "type": "string"
+        },
+        "is_virtual": {
+            "type": "boolean"
+        }
+    },
+    "config": {}
+}

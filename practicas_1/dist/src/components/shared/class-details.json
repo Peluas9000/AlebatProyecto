@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_shared_class_details",
+    "info": {
+        "displayName": "class-details"
+    },
+    "options": {},
+    "attributes": {
+        "horario": {
+            "type": "enumeration",
+            "enum": [
+                "morning, ",
+                "afternoon,",
+                " night"
+            ]
+        },
+        "clase": {
+            "type": "string"
+        }
+    },
+    "config": {}
+}

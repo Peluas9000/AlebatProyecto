@@ -1,0 +1,35 @@
+{
+    "kind": "collectionType",
+    "collectionName": "clases",
+    "info": {
+        "singularName": "clase",
+        "pluralName": "clases",
+        "displayName": "Clase"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "titulo": {
+            "type": "string"
+        },
+        "descripcion": {
+            "type": "blocks"
+        },
+        "fecha_inicio": {
+            "type": "date"
+        },
+        "detalles": {
+            "type": "component",
+            "component": "shared.class-details",
+            "repeatable": false
+        },
+        "profesors": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::profeso.profeso",
+            "inversedBy": "clases"
+        }
+    }
+}

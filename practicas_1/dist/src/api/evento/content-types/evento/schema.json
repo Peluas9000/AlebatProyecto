@@ -1,0 +1,43 @@
+{
+    "kind": "collectionType",
+    "collectionName": "eventos",
+    "info": {
+        "singularName": "evento",
+        "pluralName": "eventos",
+        "displayName": "Evento"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "unique": true
+        },
+        "descripcion": {
+            "type": "blocks"
+        },
+        "detalles": {
+            "type": "component",
+            "component": "shared.event-details",
+            "repeatable": false
+        },
+        "materiales": {
+            "type": "component",
+            "component": "shared.material",
+            "repeatable": true
+        },
+        "temas": {
+            "type": "component",
+            "component": "shared.topic",
+            "repeatable": true
+        },
+        "profesors": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::profeso.profeso",
+            "inversedBy": "eventos"
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "kind": "collectionType",
+    "collectionName": "profesos",
+    "info": {
+        "singularName": "profeso",
+        "pluralName": "profesos",
+        "displayName": "Profesores"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "clases": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::clase.clase",
+            "mappedBy": "profesors"
+        },
+        "nombre": {
+            "type": "string"
+        },
+        "apellidos": {
+            "type": "string"
+        },
+        "email": {
+            "type": "email"
+        },
+        "detalles": {
+            "type": "component",
+            "component": "shared.profesor-detail",
+            "repeatable": false
+        },
+        "eventos": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::evento.evento",
+            "mappedBy": "profesors"
+        }
+    }
+}
