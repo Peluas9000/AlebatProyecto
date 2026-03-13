@@ -1,7 +1,9 @@
-/**
- * clase router
- */
-
-import { factories } from '@strapi/strapi';
-
-export default factories.createCoreRouter('api::clase.clase');
+export default {
+  routes: [
+    {
+      method: "POST",
+      path: "/clases/asignar-profesor",
+      handler: "api::clase.clase.asignar",
+    },
+  ],
+};
