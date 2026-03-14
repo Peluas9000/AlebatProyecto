@@ -24,6 +24,10 @@ export default factories.createCoreController(
         ("El profesor ya imparte el máximo de 5 clases");
         ctx.badRequest(err.message);
       }
-    },
+    }, 
+
+    async recuperar(){
+      
+    }
   }),
 );
