@@ -39,7 +39,7 @@ export default factories.createCoreService(
         data: {
           // Añadimos el nuevo profesor a la lista existente
           profesors: [...clase.profesors.map((p: any) => p.id), profesor.id],
-        } as any,
+        },
       });
 
       // 4. Notificación automática (Parte del ejercicio)
