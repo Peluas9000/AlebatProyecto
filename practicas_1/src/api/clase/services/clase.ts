@@ -38,13 +38,13 @@ export default factories.createCoreService(
         documentId: claseDocId,
         data: {
           // Añadimos el nuevo profesor a la lista existente
-          profesors: [...clase.profesors.map((p: any) => p.id), profesor.id],
+          profesors: [...clase.profesors.map((p) => p.id), profesor.id],
         },
       });
 
       // 4. Notificación automática (Parte del ejercicio)
       strapi.log.info(
-        `✅ ASIGNACIÓN EXITOSA: ${profesor.nombre} asignado a ${clase.titulo}`,
+        ` ASIGNACIÓN EXITOSA: ${profesor.nombre} asignado a ${clase.titulo}`,
       );
 
       return resultado;
